@@ -7,10 +7,10 @@ SET NODE_TEMPLATE_REPO_URL=https://github.com/PrathameshYelpale/NodeJs_Project_T
 SET PROJECT_NAME=%1
 SET NEW_PROJECT_PATH=%2
 
-:: Validate the project name (only lowercase letters allowed)
-echo %PROJECT_NAME%| findstr /R "[^a-z]" >nul
-IF %ERRORLEVEL% NEQ 1 (
-    echo Error: Project name must contain only lowercase letters and no special characters or numbers.
+:: Validate the project name (only lowercase letters, numbers, _ and - allowed)
+echo %PROJECT_NAME%| findstr /R "^[a-z0-9_-]*$" >nul
+IF %ERRORLEVEL% NEQ 0 (
+    echo Error: Project name can only contain lowercase letters, numbers, underscores (_), and hyphens (-).
     exit /b 1
 )
 
@@ -38,6 +38,9 @@ cd "%PROJECT_NAME%"
 
 :: Remove the template's .git directory to avoid conflicts with the new project
 rmdir /s /q .git
+
+:: Remove the setup script itself (create_nodejs_project.bat)
+if exist "create_nodejs_project.bat" del /q "create_nodejs_project.bat"
 
 :: Replace placeholder variables in project files
 echo Customizing project files with project name "%PROJECT_NAME%"...
