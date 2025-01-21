@@ -8,7 +8,7 @@ SET PROJECT_NAME=%1
 SET NEW_PROJECT_PATH=%2
 
 :: Validate the project name (only lowercase letters, numbers, _ and - allowed)
-echo %PROJECT_NAME%| findstr /R "^[a-z0-9_-]*$" >nul
+echo %PROJECT_NAME% | findstr "^[a-z0-9_-]*$" >nul
 IF %ERRORLEVEL% NEQ 0 (
     echo Error: Project name can only contain lowercase letters, numbers, underscores (_), and hyphens (-).
     exit /b 1
