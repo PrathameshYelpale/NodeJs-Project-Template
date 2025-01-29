@@ -39,9 +39,6 @@ cd "%PROJECT_NAME%"
 :: Remove the template's .git directory to avoid conflicts with the new project
 rmdir /s /q .git
 
-:: Remove the setup script itself (create_nodejs_project.bat)
-if exist "create_nodejs_project.bat" del /q "create_nodejs_project.bat"
-
 :: Replace placeholder variables in project files
 echo Customizing project files with project name "%PROJECT_NAME%"...
 FOR /R %%f IN (*.js *.json *.md) DO (
