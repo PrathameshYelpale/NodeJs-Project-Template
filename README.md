@@ -35,24 +35,24 @@ create_nodejs_project #<project-name>
 ```
 ---
 
-<!-- ### For Mac or linux
+### For Mac or linux
 
 
 ### 1. Download the Script File
 Download the script file from this repository:
 ```bash
-curl -O https://raw.githubusercontent.com/iosumit/com.flutter.template/refs/heads/main/create_flutter_project.sh
+curl -O https://raw.githubusercontent.com/PrathameshYelpale/NodeJs_Project_Template/refs/heads/main/create_nodejs_project.sh
 ```
 ### 2. Give the execute permissions
 ```bash
-chmod +x create_flutter_project.sh
+chmod +x create_nodejs_project.sh
 ```
 
 ### 3. Run the Script
 Run the downloaded script in your terminal to create a new Flutter project:
 ```bash
-./create_flutter_project.sh #<project-name> #<organization-name>
-``` -->
+./create_nodejs_project.sh #<project-name>
+```
 ---
 The script will:
 - Create a new NodeJs project
