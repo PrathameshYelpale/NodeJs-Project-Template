@@ -26,7 +26,7 @@ This template simplifies the process of creating a NodeJs project by providing a
 #### 1. Download the Script File
 Download the script file from this repository:
 ```bash
-curl -O https://raw.githubusercontent.com/PrathameshYelpale/NodeJs_Project_Template/refs/heads/main/create_nodejs_project.bat
+curl -O https://raw.githubusercontent.com/PrathameshYelpale/NodeJs-Project-Template/refs/heads/main/create_nodejs_project.bat
 ```
 ### 2. Run the Script
 Run the downloaded script in your command prompt to create a new Flutter project:
@@ -41,7 +41,7 @@ create_nodejs_project #<project-name>
 ### 1. Download the Script File
 Download the script file from this repository:
 ```bash
-curl -O https://raw.githubusercontent.com/PrathameshYelpale/NodeJs_Project_Template/refs/heads/main/create_nodejs_project.sh
+curl -O https://raw.githubusercontent.com/PrathameshYelpale/NodeJs-Project-Template/refs/heads/main/create_nodejs_project.sh
 ```
 ### 2. Give the execute permissions
 ```bash

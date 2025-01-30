@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the Git repository URL for the Node.js template
-NODE_TEMPLATE_REPO_URL="https://github.com/PrathameshYelpale/NodeJs_Project_Template"
+NODE_TEMPLATE_REPO_URL="https://github.com/PrathameshYelpale/NodeJs-Project-Template"
 
 # Arguments
 PROJECT_NAME=$1
